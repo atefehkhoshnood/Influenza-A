@@ -10,7 +10,7 @@ import pandas as pd
 
 I = [(1,2),(3,4)]
 print(I)
-Print('Hello!')
+print('Hello!')
 #from deepchem.models.tensorgraph.models.graph_models import GraphConvTensorGraph
 
 #data_path = get_data_path(
