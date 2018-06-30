@@ -1,13 +1,21 @@
-import tensorflow as tf
-import deepchem as dc
-import numpy as np
-import pandas as pd
 
 from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
+import tensorflow as tf
+import deepchem as dc
+import numpy as np
+import pandas as pd
+
 from deepchem.models.tensorgraph.models.graph_models import GraphConvTensorGraph
+
+data_path = get_data_path(
+           dataset_name = "/Users/MAJ/Desktop/DeepChem/Influenza-A-virus-Active-NotActive.csv",
+           local_root = te_path,
+           local_repo = te_filename,
+           path = ''
+           )
 
 graph_featurizer = dc.feat.graph_features.ConvMolFeaturizer()
 loader = dc.data.data_loader.CSVLoader( tasks=['ACTIVITY_CLASS'], smiles_field="CANONICAL_SMILES", id_field="CMPD_CHEMBLID", featurizer=graph_featurizer)
