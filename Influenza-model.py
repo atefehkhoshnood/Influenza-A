@@ -3,8 +3,15 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from rdkit import Chem
-from rdkit.Chem import AllChem
+import h5py
+import pandas
+import boost
+import joblib
+import sklearn
+import numpy
+import six
+import mdtraj
+import rdkit 
 import tensorflow as tf
 import deepchem as dc
 import numpy as np
