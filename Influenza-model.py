@@ -5,12 +5,12 @@ from __future__ import unicode_literals
 
 import h5py
 import pandas
-import boost
 import joblib
 import sklearn
 import numpy
 import six
 import mdtraj
+import boost
 import rdkit 
 import tensorflow as tf
 import deepchem as dc
