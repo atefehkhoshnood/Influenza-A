@@ -1,5 +1,0 @@
-rdkit==2017.09.1
-pdbfixer==1.4
-openmm==7.2.2
-boost==1.63.0
-deepchem==2.0.0
