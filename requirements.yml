@@ -1,4 +1,4 @@
-clusterone==0.10.9
+h5py==2.7.1
 pandas==0.22.0
 rdkit==2017.09.1
 boost==1.63.0
@@ -8,3 +8,4 @@ numpy==1.13.3
 six==1.11.0
 mdtraj==1.9.1
 deepchem==2.0.0
+clusterone==0.10.9
