@@ -23,6 +23,7 @@ dependencies:
 - xgboost=0.6a2
 - zlib=1.2.11
 - h5py=2.7.1
+- numpy=1.13.3
 - deepchem=2.0.0
 - pip
 - pip:
