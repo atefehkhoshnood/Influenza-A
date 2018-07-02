@@ -12,15 +12,13 @@ import logging
 import traceback
 import json
 import glob
-#import tensorflow as tf
-#import deepchem as dc
+import tensorflow as tf
+import deepchem as dc
 import numpy as np
 import pandas as pd
-#import h5py
+import h5py
 
-
-
-#from deepchem.models.tensorgraph.models.graph_models import GraphConvTensorGraph
+from deepchem.models.tensorgraph.models.graph_models import GraphConvTensorGraph
 
 # What is your ClusterOne username? This should be something like "johndoe", not your email address!
 CLUSTERONE_USERNAME = "atefeh"
