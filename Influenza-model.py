@@ -8,9 +8,9 @@ import pandas
 import sklearn
 import numpy
 import six
-import mdtraj
 import joblib
 import rdkit 
+import mdtraj
 import tensorflow as tf
 import deepchem as dc
 import numpy as np
