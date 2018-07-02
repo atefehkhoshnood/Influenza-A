@@ -1,11 +1,20 @@
-h5py==2.7.1
-pandas==0.22.0
-rdkit==2017.09.1
-numpy==1.13.3
-boost==1.63.0
-joblib==0.11
-scikit-learn==0.18.1
-six==1.11.0
-mdtraj==1.9.1
-deepchem==2.0.0
-clusterone==0.10.9
+name: clusterone
+channels: !!python/tuple
+- !!python/unicode
+  'defaults'
+- !!python/unicode
+  'auto'
+- !!python/unicode
+  'conda-forge'
+dependencies:
+- h5py
+- pandas
+- rdkit
+- numpy
+- boost
+- joblib
+- scikit-learn
+- six
+- mdtraj
+- deepchem
+- clusterone
