@@ -10,7 +10,6 @@ import numpy
 import six
 import mdtraj
 import joblib
-import boost
 import rdkit 
 import tensorflow as tf
 import deepchem as dc
