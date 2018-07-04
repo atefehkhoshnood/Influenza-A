@@ -35,7 +35,7 @@ def install_conda_import(channel,package,version):
         globals()[package] = importlib.import_module(package)
 
 def main():
-    install_conda_import('conda-forge','flaky','3.3.0')
+    install_conda_import('conda-forge','flaky','3.3.0=py27_0')
     install_conda_import('conda-forge','joblib','0.11')
     install_conda_import('conda-forge','jupyter','1.0.0.*')
     install_conda_import('deepchem','mdtraj','1.9.1')
