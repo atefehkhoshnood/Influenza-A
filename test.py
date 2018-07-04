@@ -26,7 +26,7 @@ def install_conda_import(channel,package):
         importlib.import_module(package)
     except ImportError:
         import conda.cli
-        conda.cli.main('conda','install','-y','c', channel, package)
+        conda.cli.main('conda','install','-y','-q','-c', channel, package)
     finally:
         globals()[package] = importlib.import_module(package)
 
