@@ -37,7 +37,7 @@ def install_conda_import(channel,package,version):
         import conda.cli
         package_version=package+'='+version
         print(package_version)
-        conda.cli.main('conda','install','-y','-q','-c', channel, package_version)
+        conda.cli.main('conda','install','-y','-v -v','-q','-c', channel, package_version)
     finally:
         globals()[package] = importlib.import_module(package)
 
