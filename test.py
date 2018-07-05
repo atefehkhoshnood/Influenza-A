@@ -73,7 +73,7 @@ def main():
     install_pip_import('nose','1.3.7')
     install_pip('nose-timer','0.7.0')
     install_pip_import('pandas','0.22.0')
-    install_pip_import('pdbfixer','1.4')
+    install_pip('pdbfixer','1.4')
     install_pip_import('pillow','4.3.0')
     install_pip('python','>=2.7,<2.8.0a0')
     install_pip('scikit-learn','0.18.1')
