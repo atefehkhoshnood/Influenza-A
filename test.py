@@ -22,6 +22,13 @@ def install_pip_import(package,version):
     finally:
         globals()[package] = importlib.import_module(package)
 
+def install_pip(package,version):
+    import pip
+    package_version=package+'=='+version
+    print(package_version)
+    pip.main(['install', package])
+    
+
 def install_conda_import(channel,package,version):
     import importlib
     try:
@@ -64,12 +71,12 @@ def main():
     install_pip_import('mdtraj','1.9.1')
     install_pip_import('networkx','1.11')
     install_pip_import('nose','1.3.7')
-    install_pip_import('nose-timer','0.7.0')
+    install_pip('nose-timer','0.7.0')
     install_pip_import('pandas','0.22.0')
     install_pip_import('pdbfixer','1.4')
     install_pip_import('pillow','4.3.0')
-    install_pip_import('python','>=2.7,<2.8.0a0')
-    install_pip_import('scikit-learn','0.18.1')
+    install_pip('python','>=2.7,<2.8.0a0')
+    install_pip('scikit-learn','0.18.1')
     install_pip_import('simdna','0.4.2')
     install_pip_import('requests','2.18.4')
     install_pip_import('xgboost','0.6a2')
