@@ -74,6 +74,7 @@ def main():
     install_pip('nose-timer','0.7.0')
     install_pip_import('pandas','0.22.0')
 #    install_pip_import('pdbfixer','1.4')
+    install_conda_import('omnia','pdbfixer','1.4')
     install_pip('pillow','4.3.0')
     install_pip('python','>=2.7,<2.8.0a0')
     install_pip('scikit-learn','0.18.1')
@@ -82,7 +83,8 @@ def main():
     install_pip_import('xgboost','0.6a2')
     install_pip_import('zlib','1.2.11')
     install_pip_import('h5py','2.7.1')
-    install_pip_import('rdkit','2017.09.1')
+#    install_pip_import('rdkit','2017.09.1')
+    install_conda_import('rdkit','rdkit','2017.09.1')
     install_pip_import('deepchem','2.0.0')
 
     install_pip_import('clusterone','0.11.2')
