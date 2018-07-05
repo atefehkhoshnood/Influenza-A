@@ -59,6 +59,8 @@ def main():
     install_pip_import('flaky','3.3.0')
     install_pip_import('joblib','0.11')
     install_pip_import('jupyter','1.0.0.*')
+    install_pip_import('numpy','1.13.3')
+    install_pip_import('cython','>=0.19')
     install_pip_import('mdtraj','1.9.1')
     install_pip_import('networkx','1.11')
     install_pip_import('nose','1.3.7')
@@ -73,7 +75,6 @@ def main():
     install_pip_import('xgboost','0.6a2')
     install_pip_import('zlib','1.2.11')
     install_pip_import('h5py','2.7.1')
-    install_pip_import('numpy','1.13.3')
     install_pip_import('rdkit','2017.09.1')
     install_pip_import('deepchem','2.0.0')
 
