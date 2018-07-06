@@ -41,6 +41,13 @@ def install_conda_import(channel,package,version):
     finally:
         globals()[package] = importlib.import_module(package)
 
+def install_conda_import(channel,package,version):
+    import conda.cli
+    package_version=package+'='+version
+    print(package_version)
+    conda.cli.main('conda','install','-y','-v -v','-q','-c', channel, package_version)
+    print('installed:'+package_version)
+ 
 def main():
 #    install_conda_import('conda-forge','flaky','3.3.0')
 #    install_conda_import('conda-forge','joblib','0.11')
@@ -74,7 +81,7 @@ def main():
     install_pip('nose-timer','0.7.0')
     install_pip_import('pandas','0.22.0')
 #    install_pip_import('pdbfixer','1.4')
-    install_conda_import('omnia','pdbfixer','1.4')
+    install_conda('omnia','pdbfixer','1.4')
     install_pip('pillow','4.3.0')
     install_pip('python','>=2.7,<2.8.0a0')
     install_pip('scikit-learn','0.18.1')
