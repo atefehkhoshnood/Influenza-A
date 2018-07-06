@@ -72,6 +72,7 @@ def main():
 
     install_pip_import('conda','4.5.4')
     install_pip('ruamel.yaml','0.15.42')
+    install_pip('pyyaml','3.12')
 
     install_pip_import('flaky','3.3.0')
     install_pip_import('joblib','0.11')
