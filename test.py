@@ -42,7 +42,6 @@ def install_conda_import(channel,package,version):
         globals()[package] = importlib.import_module(package)
 
 def install_conda(channel,package,version):
-    import conda
     import conda.cli
     package_version=package+'='+version
     print(package_version)
@@ -70,6 +69,8 @@ def main():
 #    install_conda_import('conda-forge','numpy','1.13.3')
 #    install_conda_import('rdkit','rdkit','2017.09.1')
 #    install_conda_import('','deepchem','2.0.0')
+
+    install_pip_import('conda','4.5.4')
 
     install_pip_import('flaky','3.3.0')
     install_pip_import('joblib','0.11')
