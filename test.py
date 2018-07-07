@@ -31,6 +31,8 @@ def install_pip(package,version):
 
 def install_conda_import(channel,package,version):
     import importlib
+    import conda
+    print('conda version is:'+conda.__version__)
     try:
         importlib.import_module(package)
     except ImportError:
@@ -43,6 +45,8 @@ def install_conda_import(channel,package,version):
 
 def install_conda(channel,package,version):
     import conda.cli
+    import conda
+    print('conda version is:'+conda.__version__)
     package_version=package+'='+version
     print(package_version)
     conda.cli.main('conda','install','-y','--debug','-q','-c', channel, package_version)
