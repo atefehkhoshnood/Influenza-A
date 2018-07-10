@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 
 import time
 import os
+import flaky
 import tensorflow as tf
 import numpy as np
 import pandas as pd
@@ -79,7 +80,7 @@ def main():
 #    install_pip('pyyaml','3.12')
 #    install_conda('conda-forge','flaky','3.3.0')
 
-    install_pip_import('flaky','3.3.0')
+#    install_pip_import('flaky','3.3.0')
     install_pip_import('joblib','0.11')
     install_pip_import('jupyter','1.0.0.*')
     install_pip_import('numpy','1.13.3')
