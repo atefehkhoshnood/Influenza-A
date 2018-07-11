@@ -5,7 +5,10 @@ channels:
 - rdkit
 - deepchem 
 dependencies:
-- conda=4.5.4
+- pip
+- pip:
+  - clusterone==0.11.2
+  - conda==4.5.4
 - flaky=3.3.0
 - joblib=0.11
 - jupyter=1.0.0.*
@@ -26,6 +29,3 @@ dependencies:
 - h5py=2.7.1
 - numpy=1.13.3
 - deepchem=2.0.0
-- pip
-- pip:
-  - clusterone==0.11.2
