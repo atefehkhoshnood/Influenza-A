@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 import time
 import os
-import flaky
+from flaky import flaky
 import tensorflow as tf
 import numpy as np
 import pandas as pd
