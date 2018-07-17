@@ -7,7 +7,7 @@ channels:
 dependencies:
 - pip
 - pip:
-  - conda-env>=2.6
+#  - conda-env>=2.6
   - enum34
   - futures
   - pycosat>=0.6.3
