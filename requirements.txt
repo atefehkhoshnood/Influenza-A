@@ -1,2 +1,1 @@
-conda==4.5.4
 clusterone==0.11.2
