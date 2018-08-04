@@ -74,8 +74,8 @@ def main():
 #    install_conda_import('rdkit','rdkit','2017.09.1')
 #    install_conda_import('','deepchem','2.0.0')
 
-#    install_pip_import('conda','4.5.1')
-#    install_pip('ruamel.yaml','0.15.42')
+    install_pip_import('conda','4.5.1')
+    install_pip('ruamel.yaml','0.15.42')
 #    install_pip('pyyaml','3.12')
 #    install_conda('conda-forge','flaky','3.3.0')
 
@@ -83,7 +83,7 @@ def main():
     install_pip_import('joblib','0.11')
     install_pip_import('jupyter','1.0.0.*')
     install_pip_import('numpy','1.13.3')
-    install_pip_import('cython','>=0.19')
+#    install_pip_import('cython','>=0.19')
     install_pip_import('mdtraj','1.9.1')
     install_pip_import('networkx','1.11')
     install_pip_import('nose','1.3.7')
