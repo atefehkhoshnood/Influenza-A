@@ -19,7 +19,7 @@ def install_pip_import(package,version):
         print('pip version is:'+pip.__version__)
         package_version=package+'=='+version
         print(package_version)
-        pip.main(['install', package])
+        pip.main(['install', package_version])
     finally:
         globals()[package] = importlib.import_module(package)
 
@@ -28,7 +28,7 @@ def install_pip(package,version):
     print('pip version is:'+pip.__version__)
     package_version=package+'=='+version
     print(package_version)
-    pip.main(['install', package])
+    pip.main(['install', package_version])
     
 
 def install_conda_import(channel,package,version):
@@ -76,7 +76,7 @@ def main():
 #    install_conda_import('rdkit','rdkit','2017.09.1')
 #    install_conda_import('','deepchem','2.0.0')
 
-#    install_pip('conda','4.5.4')
+    install_pip('conda','4.5.4')
     install_pip('ruamel.yaml','0.15.42')
 #    install_pip('pyyaml','3.12')
 #    install_conda('conda-forge','flaky','3.3.0')
