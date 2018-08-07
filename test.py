@@ -16,6 +16,7 @@ def install_pip_import(package,version):
         importlib.import_module(package)
     except ImportError:
         import pip
+        print('pip version is:'+pip.__version__)
         package_version=package+'=='+version
         print(package_version)
         pip.main(['install', package])
@@ -24,6 +25,7 @@ def install_pip_import(package,version):
 
 def install_pip(package,version):
     import pip
+    print('pip version is:'+pip.__version__)
     package_version=package+'=='+version
     print(package_version)
     pip.main(['install', package])
