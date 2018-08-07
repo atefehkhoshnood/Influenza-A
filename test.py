@@ -18,7 +18,7 @@ def install_pip_import(package,version):
         import pip
         package_version=package+'=='+version
         print(package_version)
-        pip._internal.main(['install', package])
+        pip.main(['install', package])
     finally:
         globals()[package] = importlib.import_module(package)
 
@@ -26,7 +26,7 @@ def install_pip(package,version):
     import pip
     package_version=package+'=='+version
     print(package_version)
-    pip._internal.main(['install', package])
+    pip.main(['install', package])
     
 
 def install_conda_import(channel,package,version):
@@ -74,21 +74,21 @@ def main():
 #    install_conda_import('rdkit','rdkit','2017.09.1')
 #    install_conda_import('','deepchem','2.0.0')
 
-    install_pip('conda','4.5.4')
+#    install_pip('conda','4.5.4')
     install_pip('ruamel.yaml','0.15.42')
 #    install_pip('pyyaml','3.12')
 #    install_conda('conda-forge','flaky','3.3.0')
 
-    install_pip_import('flaky','3.3.0')
-    install_pip_import('joblib','0.11')
-    install_pip_import('jupyter','1.0.0.*')
-    install_pip_import('numpy','1.13.3')
+#    install_pip_import('flaky','3.3.0')
+#    install_pip_import('joblib','0.11')
+#    install_pip_import('jupyter','1.0.0.*')
+#    install_pip_import('numpy','1.13.3')
 #    install_pip_import('cython','>=0.19')
-    install_pip_import('mdtraj','1.9.1')
-    install_pip_import('networkx','1.11')
-    install_pip_import('nose','1.3.7')
-    install_pip('nose-timer','0.7.0')
-    install_pip_import('pandas','0.22.0')
+#    install_pip_import('mdtraj','1.9.1')
+#    install_pip_import('networkx','1.11')
+#    install_pip_import('nose','1.3.7')
+#    install_pip('nose-timer','0.7.0')
+#    install_pip_import('pandas','0.22.0')
 #    install_pip_import('pdbfixer','1.4')
     install_conda('omnia','pdbfixer','1.4')
     install_pip('pillow','4.3.0')
@@ -103,7 +103,7 @@ def main():
     install_conda_import('rdkit','rdkit','2017.09.1')
     install_pip_import('deepchem','2.0.0')
 
-    install_pip_import('clusterone','0.11.2')
+#    install_pip_import('clusterone','0.11.2')
 
 if __name__ == "__main__":
     main()

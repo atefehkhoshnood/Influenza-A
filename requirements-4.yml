@@ -5,7 +5,7 @@ channels:
 - rdkit
 - deepchem 
 dependencies:
-- pip
+- pip=9.0.3
 - pip:
 #  - conda-env>=2.6
   - enum34
